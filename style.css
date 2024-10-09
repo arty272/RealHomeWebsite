@@ -1,0 +1,136 @@
+/* General Styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #E74C3C;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Highlight links on hover */
+header nav ul li a:hover {
+    color: #E74C3C;
+}
+
+/* Search Section */
+.search-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F7F7F7;
+    flex-grow: 1; /* Push footer to the bottom */
+}
+
+.search-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Highlight buttons on hover */
+.search-bar button:hover {
+    background-color: #E74C3C;
+}
+
+/* Listings */
+.listings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px 10px;
+}
+
+.listing {
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Highlight listing on hover */
+.listing:hover {
+    background-color: #ccc;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 0; /* Ensure footer stays at the bottom */
+}
+
+footer .footer-content a, footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Highlight footer links on hover */
+footer .footer-content a:hover, footer .social-media a:hover {
+    color: #E74C3C;
+    text-decoration: underline;
+}
